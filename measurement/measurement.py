@@ -104,7 +104,8 @@ def measure(image_path):
     boxes = preds[0]['boxes'].cpu().numpy()
     masks = preds[0]['masks'].cpu().numpy()
 
-    keep = scores >= confidenscores = scores[keep]
+    keep = scores >= confidence
+    scores = scores[keep]
     boxes = boxes[keep]
     masks = masks[keep]
 
@@ -138,7 +139,7 @@ def measure(image_path):
     print(f'Confidence : {scores[best]:.4f}')
     print(f'Width : {width_px:.1f} px & {width_mm:.2f} mm  (actual {real_width_mm}mm, err {error_width:.2f}mm)')
     print(f'Height : {height_px:.1f} px & {height_mm:.2f} mm  (actual {real_height_mm}mm, {error_height:.2f}mm)\n')
-    n
+    
     img_display = img.copy()
 
     # Width midpoints blue line
