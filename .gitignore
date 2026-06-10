@@ -18,6 +18,4 @@ models/*.pth
 models/maskrcnn_final.pth
 
 # Images
-*.png
-*.jpg
 *.jpeg
