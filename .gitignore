@@ -1,0 +1,22 @@
+# Large datasets
+dataset/Raw/
+dataset/undistorted/
+dataset/annotations/
+dataset/train/
+dataset/test/
+dataset/val/
+
+# Calibration images
+calibration/Images/
+
+# Outputs
+measurement/outputs/
+measurement/inputs/
+
+# Model weights
+models/*.pth
+
+# Images
+*.png
+*.jpg
+*.jpeg
