@@ -15,6 +15,7 @@ measurement/inputs/
 
 # Model weights
 models/*.pth
+models/maskrcnn_final.pth
 
 # Images
 *.png
